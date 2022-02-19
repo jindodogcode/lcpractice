@@ -1,0 +1,14 @@
+{
+  "name": "two-sum",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "test": "mocha --recursive ./tests/*.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^9.1.2"
+  }
+}

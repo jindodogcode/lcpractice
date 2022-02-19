@@ -1,0 +1,17 @@
+{
+  "name": "two-sum",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "build": "npx tsc",
+    "test": "npm run build && mocha"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@tsconfig/node16": "^1.0.2",
+    "mocha": "^9.1.2",
+    "typescript": "^4.4.3"
+  }
+}

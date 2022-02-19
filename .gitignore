@@ -1,0 +1,5 @@
+rust/**/target/
+java/**/build/
+java/**/bin/
+**/.metals/
+**/.vim/
