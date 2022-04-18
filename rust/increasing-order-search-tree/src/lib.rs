@@ -90,7 +90,7 @@ struct Solution;
 impl Solution {
     fn increasing_bst(root: Option<Rc<RefCell<TreeNode>>>) -> Option<Rc<RefCell<TreeNode>>> {
         let mut order = Vec::new();
-        Self::find_order(&root, &mut order);
+        Self::find_order(root, &mut order);
 
         let ans = Rc::new(RefCell::new(TreeNode::new(0)));
         let mut cur = ans.clone();
@@ -105,11 +105,11 @@ impl Solution {
         ans
     }
 
-    fn find_order(maybe_node: &Option<Rc<RefCell<TreeNode>>>, order: &mut Vec<i32>) {
+    fn find_order(maybe_node: Option<Rc<RefCell<TreeNode>>>, order: &mut Vec<i32>) {
         if let Some(node) = maybe_node {
-            Self::find_order(&node.borrow().left, order);
+            Self::find_order(node.borrow().left.clone(), order);
             order.push(node.borrow().val);
-            Self::find_order(&node.borrow().right, order);
+            Self::find_order(node.borrow().right.clone(), order);
         }
     }
 }
