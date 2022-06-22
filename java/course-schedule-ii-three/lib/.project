@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>course-schedule-ii-three-lib</name>
+	<name>lib</name>
 	<comment>Project course-schedule-ii-three-lib created by Buildship.</comment>
 	<projects>
 	</projects>
@@ -22,7 +22,7 @@
 	</natures>
 	<filteredResources>
 		<filter>
-			<id>1622153347278</id>
+			<id>0</id>
 			<name></name>
 			<type>30</type>
 			<matcher>
